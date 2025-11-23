@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#333',
     },
-    itemSubText: { // This now displays the Location
+    itemSubText: {
         fontSize: 14,
         color: '#666',
         marginTop: 4,
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
     },
     headerButton: {
-        backgroundColor: '#00B0FF', // Blue color for a call to action
+        backgroundColor: '#00B0FF',
         padding: 18,
         margin: 10,
         borderRadius: 10,
@@ -148,7 +148,6 @@ const styles = StyleSheet.create({
 
 
 // --- HANDLER FUNCTION ---
-// Updated to use 'location' instead of 'trailLength'
 const handler = (placeName, location) => {
     ToastAndroid.show(`Starting a run at ${placeName}! Located in: ${location}.`, ToastAndroid.SHORT);
 };
